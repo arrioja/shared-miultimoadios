@@ -1,0 +1,47 @@
+/*
+****************************************************  INFO DEL ARCHIVO
+  		   Creado por: 	Pedro Arrioja
+  Descripción:  Este Archivo contiene información muy importante sobre el projecto
+                al momento de enviarlo al servidor a Producción.
+ ****************************************************  FIN DE INFO
+ */
+
+
+
+Archivo: /index.php
+Modificación:
+$yii=dirname(__FILE__).'/../yii/framework/yii.php';  // PARA LOCAL
+// $yii=dirname(__FILE__).'/../var/www/yii/framework/yii.php';  // PARA EL SERVIDOR
+
+Colocar False en:
+defined('YII_DEBUG') or define('YII_DEBUG',true);
+
+
+Archivo: /protected/config/main.php
+Colocar "True" a la Variable en la seccion parameters:
+Yii::app()->params->ver_publicidad
+
+
+Modificación:  // Esta configuración es para el servidor
+		'db'=>array(
+			'connectionString' => 'mysql:host=localhost;dbname=xxxxxxxxxxxxxxxxxxxxx',
+			'emulatePrepare' => true,
+			'username' => 'xxxxxxxxxxxxxxxxxxxxx',
+			'password' => 'xxxxxxxxxxxxxxxxxxxxx',
+			'charset' => 'utf8',
+		),
+
+
+Archivo: protected/controllers/DocumentsController
+Modificación:
+    public function actionDownload(){
+        DocumentStatistics::oneDownload($_GET['realn']);
+       // $file = (dirname(__FILE__).'/../../..'.$_GET['file']);  // LOCAL
+        $file = "/home/nombredemisitio/www/".$_GET['file'];              // PARA EL SERVIDOR
+
+
+    public function actionDelete($id) {
+        $arch = "/home/arrioja/miswebs/nombredemisitio/".$estedocumento->url;      //  Este es para el Local
+        // $arch = "/home/nombredemisitio/www/".$estedocumento->url;      //  Este es para el Servidor!
+
+

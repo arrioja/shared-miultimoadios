@@ -1,0 +1,8 @@
+Este documento contiene ideas acerca de lo que se puede desarrollar y ofrecer a los
+usuarios del sitio web.
+
+
+***********************************************************************************************
+                   CARACTERÍSTICAS, MODULOS Y PÁGINAS PARA DESARROLLAR
+***********************************************************************************************
+

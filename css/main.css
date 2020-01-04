@@ -1,0 +1,774 @@
+/* Este es el CSS Principal del proyecto.
+
+*/
+
+
+/* Sección del HEADER */
+#header
+{
+	margin: 0 0 0 0;
+	padding: 0;
+    background:url(../images/background.jpg) left top repeat-x;
+   /*  height: 100px; */
+}
+
+#logo
+{
+	/* padding: 10px 20px; */
+	/* font-size: 200%; */
+    float:left;
+}
+
+.header_publicidad
+{
+    float:right;
+    background: url(../images/publicidad_header.jpg) repeat-x;
+}
+
+/* FIN DE LA SECCIÓN DEL HEADER*/
+
+* { margin:0; padding:0;}
+
+body
+{
+	margin: 0;
+	padding: 0;    
+	/*color: #555;
+	font: normal 10pt Arial,Helvetica,sans-serif; 
+	background:url(../images/body-bg.gif) left top repeat-x #fff; */
+    background:#fff; 
+    font-family:Tahoma, Geneva, sans-serif;
+    font-size:100%;
+    line-height:1.125em;
+    color:#1c2328;    
+    background:url(../images/fondos/fondo2.png) left top repeat;
+}
+
+.main_body
+{
+    float:left;
+    width: 950px;
+
+}
+
+#page
+{
+	margin-top: 0px;
+	margin-bottom: 5px;
+
+	/* 
+    background: white;
+        border: 1px solid #C9E0ED;*/
+}
+
+#content
+{
+    padding: 0;
+    margin: 0;
+    background:url(../images/fondos/white_layout.png) left top repeat;
+    width:730px;
+
+}
+
+.main_bloque_izquierdo_usuario
+{
+    width:220px; margin-right:4px; float:left;
+}
+
+.main_bloque_izquierdo_usuario_descripcion
+{    
+    width:100%;
+    margin-top:1px;
+    line-height:1.45em;
+    font: 0.75em Arial,Helvetica,sans-serif;
+}
+
+.main_bloque_izquierdo_usuario_descripcion_interna
+{
+    padding:10px 10px 18px 10px;
+}
+
+.main_bloque_izquierdo
+{
+    width:311px; margin-right:4px; float:left;
+}
+
+.main_bloque_centro
+{
+    width:311px; margin-left:4px; float:left;
+
+}
+
+.main_bloque_derecho
+{
+    width:311px; margin-right:0px; float:right;
+}
+
+.main_bloque_titulo
+{
+    font-size:0.9em;
+    background:url(../images/tile1.gif) left top repeat-x;
+    height:30px;
+    padding-left:20px;
+    line-height:28px;
+    margin-bottom:1px;
+}
+.main_bloque_imagen
+{
+
+}
+.main_bloque_descripcion
+{
+    background:url(../images/box1-bg.gif) left top repeat-x #e0ecf0;
+    width:100%;
+    margin-top:1px;
+    line-height:1.45em;
+    font: 0.75em Arial,Helvetica,sans-serif;
+}
+.main_bloque_descripcion_interna
+{
+    padding:10px 10px 18px 10px;
+}
+
+.main_bloque_descripcion_interna_link
+{
+    background:url(../images/arrow1.gif) no-repeat right 5px;
+    padding-right:12px;
+    color:#409cc1;
+    font-weight:bold;
+}
+
+.main_bloque_grande
+{
+    background: url(../images/header-bg.png) repeat-x;
+    width:100%;
+    height:315px;
+    margin-top:1px;
+    line-height:1.45em;
+    font: 0.75em Arial,Helvetica,sans-serif;
+}
+
+.main_bloque_grande_titulo
+{
+    font-size:18pt;
+    height:30px;
+    padding:30px 0 0 30px;
+    line-height:28px;
+    margin-bottom:1px;        
+    margin: 0 0 0 0;
+}
+.main_bloque_grande_imagen
+{
+
+}
+.main_bloque_grande_descripcion
+{
+    
+    padding: 0 0 0 20px;
+    width:440px;
+    font: 12pt Arial,Helvetica,sans-serif;
+}
+.main_bloque_grande_descripcion_interna
+{
+   /* padding:10px 10px 18px 10px; */
+}
+
+.main_bloque_grande_descripcion_interna_link
+{
+    margin: 0 0 0 0;
+    display:block;
+    float:right;
+    background:url(../images/link1-left.gif) no-repeat left top #fff;
+    color:#323232;
+    text-decoration:none;        
+}
+
+.main_bloque_grande_descripcion_interna_link b
+{
+    display:block;
+    background:url(../images/link1-right.gif) no-repeat right top;
+    padding:6px 40px 7px 24px;
+    text-transform:uppercase;
+}
+
+.main_bloque_grande_descripcion_interna_link:hover
+{ 
+    text-decoration:underline;
+}
+
+.main_bloque_formularios_ancho
+{
+    width:100%
+}
+
+.main_bloque_formularios
+{
+  /*  background:url(../images/background.jpg) left top repeat-x #e0ecf0;  */
+    margin-top:1px;
+    line-height:1.45em;
+    font: 1em Arial,Helvetica,sans-serif;
+}
+.main_bloque_formularios_interna
+{
+    padding:10px 0 18px 20px;
+}
+
+.main_bloque_formularios_interna_link
+{
+    background:url(../images/arrow1.gif) no-repeat right 5px;
+    padding-right:12px;
+    color:#409cc1;
+    font-weight:bold;
+}
+
+
+
+
+.vista_mensaje_top
+{
+    background:url(../images/pergaminos/001_top.png) no-repeat;
+    height:157px;
+}
+.vista_mensaje_bottom
+{
+    background:url(../images/pergaminos/001_bottom.png) no-repeat;
+    height:110px;
+    margin: -10px 0 0 0;
+}
+.vista_mensaje_mid
+{
+    background:url(../images/pergaminos/001_mid.png);
+}
+
+.vista_mensaje_mid_cuerpo
+{
+    padding:10px 0 0 35px;
+    text-align:left;
+    width:90%;
+}
+
+.vista_mensaje_top h1
+{
+    padding:30px 0 0 30px;
+}
+
+.vista_mensaje_encabezado
+{
+    padding:10px 55px 0 0;
+    float:right;    
+    text-align:right;
+    font-weight:bold;
+}
+
+.vista_enlaces_top
+{
+    margin:-70px 40px 0 0;
+    float:right;
+}
+
+.vista_enlaces_bottom
+{
+    margin:25px 40px 0 0;
+    float:right;
+}
+
+
+
+/* ventana de info: Historias de exito */
+
+.texto_citado
+{
+    margin:0 150px 0 120px;
+    text-align:justify;
+    font-style:italic;
+}
+
+.texto_citado_autor
+{
+    margin:0 120px 0 120px;
+    text-align:right;
+    float: right;
+    font-weight: bold;
+    font-style:italic;
+}
+
+.texto_como_funciona_paso1
+{
+    margin:0;
+    padding: 0 0 0 140px;
+    float: left;
+    height:130px;
+    background:url(../images/pasos/paso1.png) no-repeat;
+}
+.texto_como_funciona_paso2
+{
+    margin:0;
+    padding: 0 0 0 140px;
+    float: left;
+    height:130px;
+    background:url(../images/pasos/paso2.png) no-repeat;
+}
+.texto_como_funciona_paso3
+{
+    margin:0;
+    padding: 0 0 0 140px;
+    float: left;
+    height:130px;
+    background:url(../images/pasos/paso3.png) no-repeat;
+}
+
+
+
+
+/**************************  Ventajas de ser Premium **************************/
+
+
+.item_ventaja_premium
+{
+    margin:0;
+    padding: 5px 0 0 45px;
+    float: left;
+    height:70px;
+    background:url(../images/botones/clean_med.png) no-repeat;
+}
+
+/**************************  PREGUNTAS Y RESPUESTAS  **************************/
+
+.pregunta  /**/
+{
+    padding: 0 0 0 40px;
+    font-weight: bold;
+}
+
+.respuesta  /**/
+{
+    padding: 0 0 0 50px;
+}
+
+
+.hint  /**/
+{
+	margin: 0;
+	padding: 0;
+	color: #999;
+    font-size: 0.8em;
+}
+
+
+
+
+
+/**************************  PRECIOS  **************************/
+.bloque_precios
+{
+    margin:0;
+    padding: 25px 30px 20px 30px;
+    float: left;
+    width: 290px;
+    height: 400px;
+    background:url(../images/fondos/fondoprecio.png) no-repeat;
+}
+
+.bloque_precios_titulo
+{
+    margin:0;
+    font-size: 1.5em;
+    color: #009;
+    text-shadow: 0.1em 0.1em 0.2em #333
+}
+
+.bloque_precios_descripcion
+{
+    margin:0;    
+    padding: 20px 15px 0 15px;
+}
+
+.bloque_precios_precio
+{
+    margin:-10px 0 0 0;
+    padding: 30px 0 15px 0;
+    width: 100px;
+    height: 100px;
+    color: #ffae00;
+    text-shadow: 0.1em 0.1em 0.2em #333;
+    font-size: 1.2em;
+    font-weight:bold;
+    text-align:center;
+    float:left;
+    background:url(../images/fondos/blue-ribbon-circle.jpg) no-repeat;
+}
+.bloque_precios_btn_pagar
+{
+    margin:10px 0 0 15px;
+    padding: 0;
+    width: 100px;
+    height: 100px;
+    font-weight:bold;
+    float:left;
+    text-align:center;    
+}
+
+.bloque_precios_separacion
+{
+    margin:0;
+    padding: 0;
+}
+
+#mainmenu_bg
+{
+    Clear:none;
+}
+
+
+#mainmenu
+{
+    height:45px;
+/*    background:url(images/menu-bg.gif) left top repeat-x; */
+	background:transparent url(../images/menu-bg.gif) repeat-x left top;
+    clear:right;
+    margin:0px 0px 0px 0px;
+    width:100%;
+    font: 0.8em Arial,Helvetica,sans-serif;
+    float:left;
+}
+
+
+#mainmenu ul
+{
+	padding:6px 20px 8px 20px;
+	margin:0px;
+}
+
+#mainmenu ul li
+{
+	display: inline;
+    float:left; margin-left:-1px;
+}
+
+#mainmenu ul li a
+{
+    display:block;
+    background:url(../images/divider.gif) left 4px no-repeat;
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:bold;
+    text-decoration:none;
+    width:161px;
+    text-align:center;
+    line-height:40px;
+}
+
+#mainmenu ul li a:hover, #mainmenu ul li.active a
+{
+	color: #000d8e;
+	background-color:#EFF4FA;
+/*    background-color:transparent;
+	text-decoration:none; */
+    text-decoration:underline;
+}
+
+.contenido_logueados
+{
+    padding:0px 10px 18px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar
+{
+	padding: 0;
+}
+
+#footer
+{
+	padding: 10px;
+	margin: 10px 20px;
+	font-size: 0.8em;
+	text-align: center;
+	border-top: 1px solid #C9E0ED;
+}
+
+
+
+
+
+div.flash-error, div.flash-notice, div.flash-success
+{
+	padding:.8em;
+	margin-bottom:1em;
+	border:2px solid #ddd;
+}
+
+div.flash-error
+{
+	background:#FBE3E4;
+	color:#8a1f11;
+	border-color:#FBC2C4;
+}
+
+div.flash-notice
+{
+	background:#FFF6BF;
+	color:#514721;
+	border-color:#FFD324;
+}
+
+div.flash-success
+{
+	background:#E6EFC2;
+	color:#264409;
+	border-color:#C6D880;
+}
+
+div.flash-error a
+{
+	color:#8a1f11;
+}
+
+div.flash-notice a
+{
+	color:#514721;
+}
+
+div.flash-success a
+{
+	color:#264409;
+}
+
+div.form .rememberMe label
+{
+	display: inline;
+}
+
+div.view
+{
+	padding: 10px;
+	margin: 0;
+    border-bottom: solid 1px #C9E0ED;
+    width: 100%;
+}
+
+div.breadcrumbs
+{
+	font-size: 0.9em;
+	padding: 5px 20px;
+}
+
+div.breadcrumbs span
+{
+	font-weight: bold;
+}
+
+div.search-form
+{
+	padding: 10px;
+	margin: 10px 0;
+	background: #eee;
+}
+
+.portlet
+{
+
+}
+
+.portlet-decoration
+{
+	padding: 3px 8px;
+	background: #B7D6E7;
+	border-left: 5px solid #6FACCF;
+}
+
+.portlet-title
+{
+	font-size: 12px;
+	font-weight: bold;
+	padding: 0;
+	margin: 0;
+	color: #298dcd;
+}
+
+.portlet-content
+{
+	font-size:0.9em;
+	margin: 0 0 15px 0;
+	padding: 5px 8px;
+	background:#EFFDFF;
+}
+
+.portlet-content ul
+{
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+.portlet-content li
+{
+	padding: 2px 0 4px 0px;
+}
+
+.operations
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.operations li
+{
+	padding-bottom: 2px;
+}
+
+.operations li a
+{
+	font: bold 12px Arial;
+	color: #0066A4;
+	display: block;
+	padding: 2px 0 2px 8px;
+	line-height: 15px;
+	text-decoration: none;
+}
+
+.operations li a:visited
+{
+	color: #0066A4;
+}
+
+.operations li a:hover
+{
+	background: #80CFFF;
+}
+
+
+/* Nuevos estilos añadidos por mi, Gabriel Infante */
+
+/**************************  BARRA DE BÚSQUEDA   *******************************/
+
+img
+{
+    border:0;
+    vertical-align:top;
+    text-align:left;
+}
+
+/**************************  Página Principal  *****************************/
+
+
+.main_izquierda
+{
+    width: 950px;
+    float:left;
+}
+
+.main_derecha
+{
+    float:right;
+}
+
+.izquierda
+{
+    float:left;
+}
+
+.derecha
+{
+    float:right;
+}
+
+/**************************  Listado de Documentos  *****************************/
+
+div.view_doc_list
+{
+    padding: 0 0 0 0;
+	margin: 0;
+    border-bottom: solid 1px #C9E0ED;    
+    width: 100%;
+}
+
+/**************************  Caja de Herramientas  ************************************/
+
+.herramientas_ancho_widget  /**/
+{
+    width: 176px;
+}
+
+#herramientas_ancho_cuerpo_widget  /**/
+{
+    width: 144px;
+}
+
+
+/***************************  RECUPERAR CONTRASEÑA  **************************************/
+
+.recover_ancho_box  /**/
+{
+    width: 410px;
+}
+
+#recover_ancho_cuerpo  /**/
+{
+    width: 378px;
+}
+
+#recover_box_con_margen  /**/
+{
+    margin:0px 0px 0px 20%;
+}
+
+
+/***************************  LOGIN  **************************************/
+
+.envoltura_login  /**/
+{
+    width: 900px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

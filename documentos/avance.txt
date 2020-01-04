@@ -1,0 +1,110 @@
+/*
+****************************************************  INFO DEL ARCHIVO
+  		   Creado por: 	Pedro Arrioja
+  Descripción:  Este archivo contiene información de por donde voy en el proyecto
+                la finalidad es que simplemente con leer este archivo ya tenga una
+                idea de por donde continuar.
+ ****************************************************  FIN DE INFO
+ */
+
+Hacer una especie de "programador" de eventos, un espacio donde el usuario pueda escribir cosas
+para las redes sociales de ciertas personas o en su muro, para que aparezcan bien sea cuando lleque
+su momento o quizás esa persona quiera dirigir un mensaje personalizado a alguien en específico
+por ejemplo, poner un mensaje de feliz cumpleaños para x persona en x día y así.
+
+Hacer una parte en que el usuario autorice a la aplicación a notificarle a sus redes sociales acerca
+de su muerte en caso de que suceda, osea, que ponga un mensaje en su muro, lo twitee, coloque una imágen
+en instagram, etc.
+
+Agarrar la parte de mercadopana que filtra el pais al momento de inscribirse
+para que solo se muestren los paises que se permitan
+
+Este es el listado de los mensajes que tiene el usuario, hay varias cosas que
+hacer aqui, 4.- colocar una propaganta para que se convierta
+en usuario premium si es gratuito.
+
+El proceso de cancelación se me ocurre que debe ser asi:
+1.- el usuario hace click en el corazón roto
+2.- El sistema le envia una confirmación/ advertencia ahí mismo de que ese boton es para
+    cancelar, si le da en aceptar entonces cancelará
+3.- si da en aceptar, el sistema le enviará un correo con un enlace y una clave de
+    cancelación
+4.- el usuario debe dar click al enlace y cuando abra la página, debe también
+    colocar la clave que se la mando por correo.
+5.- Si la pone y todo coincide, el sistema eliminará sus mensajes y su identidad del sitio web.
+
+
+
+Para implementar:
+Que el usuario premium pueda escojer un tema con el cual adornar su mensaje, se pueden buscar
+varios fondos (por ejemplo de pergaminos) en internet para que el usuario escoja cual quiere en su mensaje.
+
+Que en la vista previa del documento haya más botones debajo, como un link directo a editar, un borrar y un cambiar template;
+y en caso de que sea un usuario premium, un ver siguiente y anterior.
+
+Algunas imagenes para bajar
+http://fairyandfolktalesfortoday.com/images/
+
+
+
+
+
+
+
+
+
+	public function actionCreate()
+	{
+        If(Usuario::model()->findByPk(Yii::app()->user->ID)->codRol->level <= 10)
+        { // Si es un usuario gratuito
+            if(count(Usuario::model()->findByPk(Yii::app()->user->ID)->Msgs >= 1))
+            { // Si ya el usuario gratuito tiene un mensaje registrado, entonces se le lleva a editar el mensaje que ya tiene.
+
+$model = Mensajes::model()->findByAttributes(array('uid'=>Yii::app()->user->ID));
+
+$this->render('update',array(
+			'model'=>$model,));
+
+
+
+
+              //  $this->redirect(array('update','model'=>$model));
+            }
+            else
+            { // Si el usuario gratuito no tiene aún ningún mensaje registrado entonces se lleva a que registre su primer mensaje.
+                $model=new Mensajes;
+
+                // Uncomment the following line if AJAX validation is needed
+                // $this->performAjaxValidation($model);
+
+                if(isset($_POST['Mensajes']))
+                {
+                    $model->attributes=$_POST['Mensajes'];
+                    if($model->save())
+                        $this->redirect(array('view','id'=>$model->id));
+                }
+
+                $this->render('create',array(
+                    'model'=>$model,
+                ));
+            }
+        }
+        else
+        { // Si es un usuario premium que quiere crear un mensaje entonces se lleva a crearlo y listo.
+            $model=new Mensajes;
+
+            // Uncomment the following line if AJAX validation is needed
+            // $this->performAjaxValidation($model);
+
+            if(isset($_POST['Mensajes']))
+            {
+                $model->attributes=$_POST['Mensajes'];
+                if($model->save())
+                    $this->redirect(array('view','id'=>$model->id));
+            }
+
+            $this->render('create',array(
+                'model'=>$model,
+            ));
+        }
+	}

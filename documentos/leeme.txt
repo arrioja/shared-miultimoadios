@@ -1,0 +1,8 @@
+Este directorio contiene documentos que pueden ser relevantes para
+La programación del sitio web,
+hacer anotaciones importantes
+Lista de tareas,
+Documentación y Manuales de uso,
+etc
+
+Pedro Arrioja

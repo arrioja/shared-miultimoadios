@@ -1,0 +1,66 @@
+/* 
+    Document   : Tablas
+    Created on : 21/09/2011, 05:01:13 PM
+    Author     : Gabriel Infante.
+    Description:
+        Esta hoja CSS tiene como finalidad almacenar los estilos de las tablas
+        del sitio web.
+*/
+
+/*
+
+#box-table-b
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	margin: 45px;
+	width: 90%;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 7px solid #9baff1;
+	border-bottom: 7px solid #9baff1;
+}
+#box-table-b th
+{
+	font-size: 13px;
+	font-weight: normal;
+	padding: 8px;
+	background: #e8edff;
+	border-right: 1px solid #9baff1;
+	border-left: 1px solid #9baff1;
+	color: #039;
+}
+#box-table-b td
+{
+	padding: 8px;
+	background: #e8edff;
+	border-right: 1px solid #aabcfe;
+	border-left: 1px solid #aabcfe;
+	color: #669;
+}
+
+*/
+
+
+#box-doc-b
+{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 14px;
+	width: 95%;
+	text-align: center;
+	border-collapse: collapse;
+	border-top: 7px solid #dddddd;
+	border-bottom: 7px solid #dddddd;
+}
+#box-doc-b td
+{	
+	padding: 8px;
+	background: #fffce5;
+	color: #000;
+}
+
+#box-doc-b tr
+{
+    border-top: 1px solid #9baff1;
+}
+
